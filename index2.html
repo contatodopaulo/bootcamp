@@ -1,0 +1,24 @@
+Senha: <input type="text" name="name1" id="name1"/>
+Repetir senha <input type="text" name="name2" id="name2" />
+<button id="btnVerify" onclick="validarSenha('name1','name2')">Verificar</button>
+
+<script>
+
+function validarSenha(attname1, attname2)
+{
+    var senha1 = document.getElementById(attname1).value;
+    var senha2 = document.getElementById(attname2).value;
+
+    if (senha1 != "" && senha2 != "" && senha1 === senha2)
+    {
+        alert('senha iguais, voce sera redirecionado');
+        //redirect para página de alterar senha
+    }
+    else
+    {
+        alert('senhas diferentes, voce ficara aqui');
+        //manter na pagina atual
+    }
+}
+
+        </script>
