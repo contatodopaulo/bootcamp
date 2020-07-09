@@ -1,0 +1,17 @@
+apt update
+apt install apache2
+apt install mysql-server
+git clone https://github.com/contatodopaulo/bootcamp .
+
+
+
+create database teste;
+create user teste@'%' identified with mysql_native_password BY 'teste102030';
+grant all on *.* to teste;
+create table user (
+    user varchar(255),
+    password varchar(255)
+);
+insert into user values ('teste1','teste102030');
+insert into user values ('teste2','teste102030');
+insert into user values ('teste3','teste102030');
