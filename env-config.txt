@@ -17,3 +17,7 @@ create table users (
 insert into users values ('teste1','teste102030');
 insert into users values ('teste2','teste102030');
 insert into users values ('teste3','teste102030');
+
+// Parametro a ser passado:
+//' or 1=1 --
+// atenção ao espaço após o "--" 
